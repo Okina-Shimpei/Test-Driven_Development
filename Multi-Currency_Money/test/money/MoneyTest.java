@@ -11,6 +11,6 @@ public class MoneyTest {
 		Dollar product = five.times(2);
 		assertEquals(10, product.amount);
 		product = five.times(3);
-		assertEquals(15, five.amount);
+		assertEquals(15, product.amount);
 	}
 }
