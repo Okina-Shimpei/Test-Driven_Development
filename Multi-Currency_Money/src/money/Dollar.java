@@ -1,7 +1,6 @@
 package money;
 
 public class Dollar extends Money {
-	private int amount;
 	public Dollar(int amount) {
 		this.amount = amount;
 	}
@@ -9,7 +8,7 @@ public class Dollar extends Money {
 		return new Dollar(amount * multiplier);
 	}
 	public boolean equals(Object obj) {
-		Dollar dollar = (Dollar) obj;
-		return amount == dollar.amount;
+		Money money = (Money) obj;
+		return amount == money.amount;
 	}
 }
