@@ -3,6 +3,7 @@ package money;
 public abstract class Money {
 	protected int amount;
 	abstract Money times(int multiplier);
+	abstract String currency();
 	public boolean equals(Object obj) {
 		Money money = (Money) obj;
 		return amount == money.amount
