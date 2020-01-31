@@ -2,8 +2,11 @@ package money;
 
 public abstract class Money {
 	protected int amount;
+	protected String currency;
 	abstract Money times(int multiplier);
-	abstract String currency();
+	String currency() {
+		return currency;
+	}
 	public boolean equals(Object obj) {
 		Money money = (Money) obj;
 		return amount == money.amount
