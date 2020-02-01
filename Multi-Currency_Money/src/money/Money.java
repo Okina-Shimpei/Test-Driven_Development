@@ -16,7 +16,7 @@ public class Money {
 	public boolean equals(Object obj) {
 		Money money = (Money) obj;
 		return amount == money.amount
-				&& getClass().equals(money.getClass());
+				&& currency().equals(money.currency());
 	}
 	public String toString() {
 		return amount + " " + currency;
