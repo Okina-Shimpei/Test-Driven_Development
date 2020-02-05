@@ -13,6 +13,5 @@ class Bank {
 	}
 	int rate(String from, String to) {
 		return rates.get(new Pair(from, to));
-
 	}
 }
