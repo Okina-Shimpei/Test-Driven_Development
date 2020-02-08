@@ -8,8 +8,8 @@ public class Sum implements Expression {
 		this.addend = addend;
 	}
 	@Override
-	public Expression plus(Expression tenFrancs) {
-		return null;
+	public Expression plus(Expression addend) {
+		return new Sum(this, addend);
 	}
 	@Override
 	public Money reduce(Bank bank, String to) {
